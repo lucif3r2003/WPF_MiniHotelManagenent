@@ -1,0 +1,20 @@
+﻿<Window x:Class="HotelManagement_View.BookingDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelManagement_View"
+        mc:Ignorable="d"
+        Title="BookingDetailWindow" Height="350" Width="600">
+    <Grid>
+        <DataGrid Name="dgvBookingDetail" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="*" Binding="{Binding Path= BookingReservationId}"/>
+                <DataGridTextColumn Header="Room ID" Width="*" Binding="{Binding Path=RoomId}"/>
+                <DataGridTextColumn Header="Start Date" Width="*" Binding="{Binding Path=StartDate}"/>
+                <DataGridTextColumn Header="End Date" Width="*" Binding="{Binding Path=EndDate}"/>
+                <DataGridTextColumn Header="Actual Price" Width="*" Binding="{Binding Path=ActualPrice}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
